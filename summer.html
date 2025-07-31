@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manaka Ono">
+    <meta name="keywords" content="javascript, sky, weather, seasons">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>夏の空 - Sky in Summer</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1 id="top">空の観察記 / Sky Logbook</h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">サイト概要</a></li>
+                    <li><a href="gallery.html" class="current">空模様ピクチャー</a></li>
+                    <li><a href="weather.html">お天気グラフ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="season-title">夏の空 - Summer Sky</h2>
+
+            <div class="season-links">
+                <a href="spring.html">春の空</a>
+                <a href="autumn.html">秋の空</a>
+                <a href="winter.html">冬の空</a>
+            </div>
+
+            <section class="slideshow-container">
+                <div class="slide fade">
+                    <img src="img/IMG_2378.jpg" alt="2022年8月8日 夏の空">
+                    <div class="caption">撮影日：2022年8月8日 14:24</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/IMG_7284.jpg" alt="2023年6月18日 夏の空">
+                    <div class="caption">撮影日：2022年6月18日 15:25</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/IMG_2012.jpg" alt="2024年8月18日 夏の空">
+                    <div class="caption">撮影日：2024年8月18日 19:17</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/IMG_5681.jpg" alt="2025年7月13日 夏の空">
+                    <div class="caption">撮影日：2025年7月13日 19:07</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/IMG_5987.jpg" alt="2025年7月30日 夏の空">
+                    <div class="caption">撮影日：2025年7月30日 17:37</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/IMG_8050.jpg" alt="2023年8月25日 夏の空">
+                    <div class="caption">撮影日：2023年8月25日 14:39</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ１.jpg" alt="2025年7月30日 夏の空">
+                    <div class="caption">撮影日：2025年7月30日 17:37</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ２.jpg" alt="2022年8月13日 夏の空">
+                    <div class="caption">撮影日：2022年8月13日 12:36</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ３.jpg" alt="2023年6月18日 夏の空">
+                    <div class="caption">撮影日：2023年6月18日 18:18</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ４.jpg" alt="2023年6月18日 夏の空">
+                    <div class="caption">撮影日：2023年6月18日 18:39</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ５.jpg" alt="2023年6月18日 夏の空">
+                    <div class="caption">撮影日：2023年6月18日 18:53</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ６.jpg" alt="2025年7月30日 夏の空">
+                    <div class="caption">撮影日：2025年7月30日 17:37</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ７.jpg" alt="2025年7月30日 夏の空">
+                    <div class="caption">撮影日：2025年7月30日 19:13</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ８.jpg" alt="2025年7月30日 夏の空">
+                    <div class="caption">撮影日：2025年7月30日 19:13</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ９.jpg" alt="2025年7月13日 夏の空">
+                    <div class="caption">撮影日：2025年7月13日 19:06</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ１０.jpg" alt="2024年6月24日 夏の空">
+                    <div class="caption">撮影日：2024年6月24日 13:57</div>
+                </div>
+                <div class="slide fade">
+                    <img src="img/夏/なつ１１.jpg" alt="2022年8月13日 夏の空">
+                    <div class="caption">撮影日：2022年8月13日 12:28</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </section>
+
+            <div class="dots-container" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+        </main>
+
+        <footer>
+            &copy; Manaka Ono, All Rights Reserved.
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

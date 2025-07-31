@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  background: linear-gradient(to top, #f0f8ff, #ffffff);
+
+  color: #333;
+  text-align: center;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #87ceeb;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+
+.gnav {
+  background-color: #dceeff;
+  padding: 0.5em 1em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.gnav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+
+.gnav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #336699;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.gnav a:hover {
+  background-color: #c1e1ff;
+  color: #003366;
+}
+
+
+.gnav a.current {
+  background-color: #336699;
+  color: white;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+
+.about-site,
+.season-definition {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 1.05rem;
+}
+
+.season-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.season-links a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.season.spring {
+  background-color: #f9a8d4;
+}
+
+.season.summer {
+  background-color: #60a5fa;
+}
+
+.season.autumn {
+  background-color: #facc15;
+}
+
+.season.winter {
+  background-color: #94a3b8;
+}
+
+
+.season.spring:hover {
+  background-color: #f472b6;
+}
+
+.season.summer:hover {
+  background-color: #3b82f6;
+}
+
+.season.autumn:hover {
+  background-color: #eab308;
+}
+
+.season.winter:hover {
+  background-color: #64748b;
+}
+
+.season-links a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(41, 255, 155, 0.514);
+}
+
+
+.about-site h2,
+.season-definition h2 {
+  font-size: 1.4rem;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+.season-definition ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+
+.intro {
+  background-color: #ffffffcc;
+  border-left: 6px solid #87ceeb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro p {
+  margin-bottom: 1em;
+}
+
+.season-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.season-title {
+  font-size: 1.8rem;
+  color: #336699;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.season-links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #87ceeb;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.season-links a:hover {
+  background-color: #5ca0c8;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
