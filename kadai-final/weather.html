@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manaka Ono">
+    <meta name="keywords" content="javascript">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>2024年 天気の割合 - 空の観察記</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="top">空の観察記 / Sky Logbook</h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">サイト概要</a></li>
+                    <li><a href="gallery.html">空模様ピクチャー</a></li>
+                    <li><a href="weather.html" class="current">お天気グラフ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>天気の割合（年間/2024）</h2>
+                <canvas id="weatherPieChart" width="400" height="400"></canvas>
+            </section>
+
+            <section>
+                <h2>季節ごとの天気出現数（2024年）</h2>
+                <canvas id="barChart" width="600" height="400"></canvas>
+            </section>
+
+            <p style="text-align: center; font-size: 0.9em; margin: 2em auto;">
+                ※データは <a href="https://tenki.jp/past/2024/01/02/weather/" target="_blank"
+                    rel="noopener noreferrer">tenki.jp</a> の過去天気情報（2024年）を参考に作成しました。
+            </p>
+        </main>
+        <footer>
+            copyright &copy; Manaka Ono, All Right Reserved.
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+
+</html>

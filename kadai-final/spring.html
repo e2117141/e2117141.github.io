@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Manaka Ono">
+  <meta name="keywords" content="spring, sky, weather, slideshow">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>春の空 - Sky in Spring</title>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1 id="top">空の観察記 / Sky Logbook</h1>
+      <nav class="gnav">
+        <ul>
+          <li><a href="index.html">サイト概要</a></li>
+          <li><a href="gallery.html" class="current">空模様ピクチャー</a></li>
+          <li><a href="weather.html">お天気グラフ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="season-title">春の空 - Spring Sky</h2>
+
+      <div class="season-links">
+        <a href="summer.html" class="summer">夏の空</a>
+        <a href="autumn.html">秋の空</a>
+        <a href="winter.html">冬の空</a>
+      </div>
+
+      <section class="slideshow-container">
+
+        <div class="slide fade">
+          <img src="img/IMG_7063.jpg" alt="2023年5月27日 春の空">
+          <div class="caption">撮影日：2023年5月27日 17:55</div>
+        </div>
+        <div class="slide fade">
+          <img src="img/image.jpg" alt="2023年5月27日 春の空">
+          <div class="caption">撮影日：2023年5月27日 17:49</div>
+        </div>
+        <div class="slide fade">
+          <img src="img/image4.jpg" alt="2025年5月10日 春の空">
+          <div class="caption">撮影日：2025年5月10日 19:35</div>
+        </div>
+        <div class="slide fade">
+          <img src="img/image5.jpg" alt="2025年5月10日 春の空">
+          <div class="caption">撮影日：2025年5月10日 12:10</div>
+        </div>
+        <div class="slide fade">
+          <img src="img/image6.jpg" alt="2025年4月5日 春の空">
+          <div class="caption">撮影日：2025年4月5日 12:24</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </section>
+
+      <div class="dots-container" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+      </div>
+    </main>
+
+    <footer>
+      &copy; Manaka Ono, All Rights Reserved.
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
